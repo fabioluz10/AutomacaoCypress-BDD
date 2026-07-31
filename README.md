@@ -39,7 +39,30 @@ cypress/
     cypress.yml
 ```
 
-## 🧪 Como executar localmente
+## � Exemplos de cenários BDD
+A automação é escrita com linguagem Gherkin, tornando os cenários legíveis para quem participa do processo de QA e desenvolvimento.
+
+```gherkin
+Feature: Login
+
+  Scenario: Login com sucesso
+    Given Eu esteja na tela de Login
+    And Eu preencho minhas credenciais
+    When Eu clico em Login
+    Then Eu vejo a mensagem de sucesso
+```
+
+```gherkin
+Feature: Cadastro de usuário
+
+  Scenario: Cadastro com campos inválidos
+    Given Eu esteja na tela de Cadastro de Usuario
+    And Eu preencho nome
+    When Eu clico em Cadastrar
+    Then Eu vejo a mensagem de erro "O campo e-mail deve ser prenchido corretamente"
+```
+
+## �🧪 Como executar localmente
 ### Pré-requisitos
 - Node.js instalado
 - npm instalado
