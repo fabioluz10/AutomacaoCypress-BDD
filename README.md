@@ -1,0 +1,77 @@
+# Automação de Testes com Cypress, BDD e GitHub Actions
+
+## 👨‍💻 Sobre mim
+Olá! Sou o Fabio Luz, Analista de Testes de Software (QA) com mais de 11 anos de experiência em qualidade, automação e melhoria contínua de processos. Meu foco está em entregar soluções eficientes, confiáveis e escaláveis para garantir a qualidade dos produtos.
+
+## 🚀 Sobre este repositório
+Este projeto é uma demonstração prática do meu trabalho com automação de testes utilizando Cypress, BDD e CI/CD. O objetivo é mostrar como estruturar cenários de teste de forma organizada, reutilizável e preparada para execução automática em pipelines.
+
+## ✅ Principais recursos
+- Automação com Cypress e Cucumber (BDD)
+- Estrutura baseada em Page Object Model
+- Cenários de cadastro e login cobrindo validações de entrada
+- Geração de relatórios e evidências
+- Execução automática com GitHub Actions
+- Captura de screenshots e vídeos em execução
+
+## 🛠️ Tecnologias utilizadas
+- Cypress
+- JavaScript
+- Cucumber BDD
+- Faker.js
+- Mochawesome Reporter
+- GitHub Actions
+
+## 📁 Estrutura do projeto
+```text
+cypress/
+  e2e/
+    features/
+      cadastro_usuario.feature
+      login.feature
+  support/
+    pages/
+      cadastro_usuario_page.js
+      home_page.js
+      login_page.js
+.github/
+  workflows/
+    cypress.yml
+```
+
+## 🧪 Como executar localmente
+### Pré-requisitos
+- Node.js instalado
+- npm instalado
+- Git instalado
+
+### Instalação
+```bash
+npm install
+```
+
+### Executar os testes
+```bash
+npm run test:ci
+```
+
+### Abrir o Cypress em modo interativo
+```bash
+npx cypress open
+```
+
+## 📊 Relatórios e evidências
+Os resultados da execução geram:
+- relatórios HTML
+- screenshots em caso de falha
+- vídeos da execução
+- artefatos salvos no GitHub Actions
+
+## ⚙️ Pipeline CI/CD
+A pipeline foi configurada no GitHub Actions para executar os testes automaticamente em um ambiente de integração contínua.
+
+### O que acontece na pipeline
+- Faz o checkout do projeto
+- Instala as dependências
+- Executa os testes com Cypress
+- Faz upload de relatórios, screenshots e vídeos como artefatos

@@ -1,0 +1,27 @@
+{
+  "name": "cypress-bdd",
+  "version": "1.0.0",
+  "description": "Cypress + Cucumber BDD automation project with CI/CD",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "cypress run --browser electron",
+    "test:headed": "cypress run --headed",
+    "test:chrome": "cypress run --browser chrome",
+    "test:ci": "cypress run --browser electron --spec \"cypress/e2e/features/**/*.feature\""
+  },
+  "keywords": ["cypress", "bdd", "cucumber"],
+  "author": "Fabio",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^26.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@faker-js/faker": "^10.5.0",
+    "cypress": "^15.19.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^4.0.2"
+  }
+}
