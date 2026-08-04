@@ -4,7 +4,7 @@
 Olá! Sou o Fabio Luz, Analista de Testes de Software (QA) com mais de 11 anos de experiência em qualidade, automação e melhoria contínua de processos. Meu foco está em entregar soluções eficientes, confiáveis e escaláveis para garantir a qualidade dos produtos.
 
 ## 🚀 Sobre este repositório
-Este projeto é uma demonstração prática do meu trabalho com automação de testes utilizando Cypress, BDD e CI/CD. O objetivo é mostrar como estruturar cenários de teste de forma organizada, reutilizável e preparada para execução automática em pipelines.
+Este repositório é uma demonstração prática de automação de testes guiada por comportamento (**Behavior-Driven Development - BDD**), utilizando **Cypress** e **Cucumber** em pipeline de **CI/CD**. O objetivo do projeto é estruturar cenários em **Gherkin** que sirvam tanto como documentação viva quanto como testes automatizados executáveis, integrando tudo a uma pipeline de CI/CD com **GitHub Actions**
 
 ## ✅ Principais recursos
 - Automação com Cypress e Cucumber (BDD)
