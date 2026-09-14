@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check application availability
+        run: curl --fail --retry 5 --retry-delay 10 --retry-all-errors https://automationpratice.com.br/
+
       - name: Run Cypress tests
         run: npm run test:ci
 

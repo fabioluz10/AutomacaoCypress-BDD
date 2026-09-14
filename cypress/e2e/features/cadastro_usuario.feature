@@ -1,6 +1,6 @@
 # Criação de cenários de testes
 
-Feature: Login
+Feature: Castro de Usuario
     Eu como cliente
     Quero me cadastrar na aplicação
     Para fazer meu primeiro pedido de compra

@@ -15,14 +15,16 @@ module.exports = defineConfig({
     reporter: "cypress-mochawesome-reporter",
     reporterOptions: {
       charts: true,
+      reportPageTitle: "Relatório de Testes",
       embeddedScreenshots: true,
       inlineAssets: true,
       saveAllAttempts: false,
-      overwrite: false,
+      html: true,
+      overwrite: true,
     },
     async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config);
-
+      require("cypress-mochawesome-reporter/plugin")(on);
       on(
         "file:preprocessor",
         createBundler({

@@ -1,0 +1,16 @@
+{
+  "name": "api-learning-restful",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "list": "node examples/01-list-all.js",
+    "create": "node examples/02-create-object.js",
+    "get": "node examples/03-get-by-id.js",
+    "update": "node examples/04-update-object.js",
+    "delete": "node examples/05-delete-object.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
